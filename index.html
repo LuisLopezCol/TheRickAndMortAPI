@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- -----Header & Banner----- -->
     <section class="titulo col-12">
         <div class="righ-header d-flex flex-column">
             <div class="nav-bar-consol">
@@ -38,19 +39,39 @@
         <img class="logo-esq" src="b6740400-92d4-11ea-8a13-d5f6e0558e9b-removebg-preview.png" alt="">
         <h1 class="">The Rick and Morty API</h1>
     </section>
+    <!-------End ofHeader & Banner----- -->
+
+    <!-------Off Canvas------->
+    <div class="card-overlay">
+        <div class="card">
+            <span class="close-card" onclick="hideCard()">
+                <i class="fa fa-window-close  fs-3 links" aria-hidden="true"></i>
+            </span>
+            <div id="card-content" class="card-content"></div>
+            <ul class="d-flex justify-content-start ps-0 ms-0 my-0">
+                <p>Appears on:</p>
+            </ul>
+            <div id="episodes"></div>
+        </div>
+    </div>
+    </div>
+    <!-------End of Off Canvas------->
+
+    <!-------Cards------->
     <section class="col-12 bg-dark">
-        <div class="container d-flex flex-wrap justify-content-center pt-5 " id="data_personajes"></div>
+        <div class="container d-flex flex-wrap justify-content-center pt-5" id="data_personajes"></div>
         <div class="button-pages pt-5 pb-5 d-flex justify-content-center" id="button_pagesPN"></div>
     </section>
+    <!-------End of Cards------->
+
+    <!-------Footer------->
     <footer>
         <div class="info-footer d-flex flex-wrap justify-content-center col" id="info_footer"></div>
         <div class="server  d-flex flex-row justify-content-center align-content-center pt-3">
             <span>
                 SERVER STATUS
             </span>
-            <div class="greenlight d-flex  align-content-center ms-2">
-
-            </div>
+            <div class="greenlight d-flex  align-content-center ms-2"></div>
         </div>
         <div class="social-media d-flex flex-row justify-content-center pt-3">
             <a href="https://github.com/LuisLopezCol" style="text-decoration: none">
@@ -64,14 +85,14 @@
             </a>
         </div>
         <div class="bit pt-3 d-flex justify-content-center">
-            <img src="/Instituto-Cursos-Programacion.png" class=" bg-light" alt="">
+            <img src="Instituto-Cursos-Programacion.png" class=" bg-light" alt="">
         </div>
         <div class="by-ll d-flex flex-row justify-content-center py-3">
             &lt &gt by <span class="mx-1 name"> Luis López </span> 2021
         </div>
     </footer>
-    <!-- <script src="js/promesas.js"></script> -->
-    <!-- <script src="js/callbacks.js"></script> -->
+    <!-------End of Footer------->
+
     <script src="asincro.js"></script>
 </body>
 
