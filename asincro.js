@@ -33,7 +33,7 @@ let consumo_api = (pagina = 1, busqueda = false) => {
         }
         contenedor_pagina.innerHTML += `
            <div class="characters d-flex flex-row">
-            <div class="picture">
+            <div class="picture links" onclick="showCard(${data_personaje.id})">
                 <img src=${data_personaje.image} alt="" class="product-img">
             </div>
             <div class="description col">
